@@ -1,0 +1,179 @@
+/* ==========================================================================
+    Álvaro Díaz (CONTACTO)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+:root {
+    --color-principal: #f6eddc;
+    --color-enlace: #e3e5d7;
+    --color-enlace-visto: #bdd6d2;
+    --color-contraste-1: #a5c8ca;
+    --color-contraste-2: #586875;
+    --color-oscuro: #2c343a;
+    --color-texto: #333;
+    --fuente-manrope: 'Manrope', sans-serif;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.menu {
+    background-color: var(--color-contraste-2) !important;
+    color: white !important;
+    padding: 1.5rem 8% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    overflow:scroll !important;
+}
+
+#compact {
+    background-color: var(--color-contraste-2) !important;
+    display: none !important;
+    border-radius: 0 !important;
+    border-color: var(--color-contraste-2) !important;
+    border-bottom-left-radius: 2px !important;
+    border-bottom-right-radius: 2px !important;
+    color: white !important;
+}
+
+#compact:hover {
+    background: var(--color-principal) !important;
+    color: var(--color-texto) !important; 
+}
+/*
+a partir de aquí ya no tendría que ir denro del estilo principal
+*/
+
+main {
+    margin: 2%;
+}
+
+.contacto-form fieldset{
+    padding: 1%;
+}
+
+.required {
+    color: red;
+    font-weight: 900;
+}
+
+button {
+    font-family: var(--fuente-manrope);
+    color: var(--color-texto);
+    padding: 0.2em 0.9em;
+    border-radius: 2px;
+    cursor: pointer;
+    background: var(--color-contraste-1);
+    border: 1px solid #969696;
+}
+
+.botones {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+button:first-child {
+    margin-left: auto;
+}
+
+button:last-child {
+    margin-right: auto;
+}
+
+button:hover {
+    background: var(--color-principal);
+}
+
+.mapa-placeholder {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+ul {
+    padding-left: 5%;
+    list-style:square;
+}
+
+.datos {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    resize: none;
+    grid-area: textarea;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+.caracteres {
+    grid-area: caracteres;
+    text-align: right;
+}
+
+.input-group {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-group:last-child {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "mensaje textarea"
+    "mensaje caracteres"
+    ;
+    align-items: baseline;
+    height: 18rem;
+}
+
+.input-group label {
+    width: 8rem;
+    height: 1.5rem;
+}
+
+.input-group input {
+    height: 1.7rem;
+}
+
+fieldset {
+    padding: 1% 5%;
+    border-color: var(--color-contraste-1);
+    border-top-color: var(--color-oscuro);
+}
+
+/* Medias Querys */
+@media screen and (max-width: 820px) {
+    .datos {
+        margin-left: 1%;
+        margin-right: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group:last-child {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "mensaje mensaje"
+        "textarea textarea"
+        "caracteres caracteres"
+        ;
+        align-items: baseline;
+        height: 18rem;
+    }
+}

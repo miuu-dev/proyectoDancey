@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANCEY - Conservatorio Profesional de Danza</title>
+    <link rel="stylesheet" href="./css/base-style.css">
+    <link rel="stylesheet" href="./css/index-style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-flex">
+                <img src="./img/logo.jpeg" alt="Logo DANCEY" class="logo-img-dancey">
+                
+                <div class="logo-texto">
+                    <h1>DANCEY</h1>
+                    <p>Conservatorio y Escuela de Artes</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./html/formacion.html">Formación</a></li>
+                <li><a href="./html/nosotros.html">Nosotros</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="principal">
+        <div class="contenido-principal">
+            <span class="titulo">Admisiones 2026 Abiertas</span>
+            <h2>Buscamos nuevos talentos</h2>
+            <p>Centro Integral de Artes Escénicas en Alcázar de San Juan</p>
+            <div class="principal-botones">
+                <button class="boton-primario" onclick="location.href='#contacto'">Infórmate</button>
+                <button class="boton-secundario" onclick="location.href='#formacion'">Ver Programas</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion">
+        <div class="seccion-header">
+            <h3>Nuestros Programas</h3>
+            <p>Formación reglada con los más altos estándares de calidad</p>
+        </div>
+        
+        <div class="cursos-contenedor">
+            <article class="curso-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="./img/grado-elemental.jpg" alt="Grado Elemental">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h4>Grado Elemental</h4>
+                    <p>1º a 4º curso. Iniciación técnica y artística.</p>
+                    <p class="precio">Desde 85€</p>
+                </div>
+            </article>
+
+            <article class="curso-tarjeta tarjeta-especial">
+                <div class="tarjeta-contenido">
+                    <h4>Grado Profesional</h4>
+                    <p>Clásica, Contemporánea y Urbana</p>
+                    
+                    <div class="galeria-mini">
+                        <div class="galeria-mini-item">
+                            <img src="./img/prof-clasica.jpg" alt="Clásica">
+                            <span>Clásica</span>
+                        </div>
+                        <div class="galeria-mini-item">
+                            <img src="./img/prof-contemporaneo.jpg" alt="Contemporánea">
+                            <span>Contemporánea</span>
+                        </div>
+                        <div class="galeria-mini-item">
+                            <img src="./img/prof-urbano.jpg" alt="Urbana">
+                            <span>Urbana</span>
+                        </div>
+                    </div>
+
+                    <p class="precio">Desde 59€</p>
+                </div>
+            </article>
+
+            <article class="curso-tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="./img/bach-artes.jpg" alt="Bachillerato">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h4>Bachillerato de Artes</h4>
+                    <p>Admisión desde el 30/03/2026</p>
+                    <p class="precio"><a href="./html/tasas-bach.html">Consultar tasas</a></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="servicios-grid">
+            <div class="servicios-texto">
+                <h3>¿Por qué elegir DANCEY?</h3>
+                <ul class="features-list">
+                    <li><strong>Título Oficial:</strong> Único centro en 100km con titulación reglada.</li>
+                    <li><strong>Instalaciones:</strong> Más de 20 aulas equipadas y suelos técnicos.</li>
+                    <li><strong>Comunidad:</strong> Residencia propia para evitar desplazamientos.</li>
+                </ul>
+            </div>
+            <div class="servicios-img">
+                <img src="img/instalaciones.jpg" alt="Instalaciones DANCEY">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-contenido">
+            <div class="footer-info">
+                <h4>DANCEY</h4>
+                <p>Avda Cruz Roja 3, Alcázar de San Juan</p>
+                <p>Tel: 911 234 678 | @dancey</p>
+            </div>
+            <div class="footer-evento">
+                <p><strong>Puertas Abiertas:</strong></p>
+                <p>25 y 26 de marzo de 2026</p>
+            </div>
+        </div>
+        <div class="footer-boton">
+            <p>&copy; 2026 DANCEY Conservatorio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src='../js/tasas-bach.js'></script>
+</body>
+</html>

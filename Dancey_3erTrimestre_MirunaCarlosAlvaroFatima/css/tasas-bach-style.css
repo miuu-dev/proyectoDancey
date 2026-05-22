@@ -1,0 +1,228 @@
+/* ==========================================================================
+    <TU NOMBRE EN MAYÚSCULAS> (NOSOTROS)
+   ========================================================================== */
+
+/* ==========================================================================
+    1. CONFIGURACIÓN GLOBAL, VARIABLES Y BASE
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+:root {
+    --color-principal: #f6eddc;
+    --color-enlace: #e3e5d7;
+    --color-enlace-visto: #bdd6d2;
+    --color-contraste-1: #a5c8ca;
+    --color-contraste-2: #586875;
+    --color-oscuro: #2c343a;
+    --color-texto: #333;
+    --fuente-manrope: 'Manrope', sans-serif;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+* {
+    box-sizing: border-box; /* El padding no suma ancho al elemento */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;     /* Prohíbe el movimiento de izquierda a derecha */
+    min-width: 320px;       /* El mínimo absoluto de un móvil */
+}
+
+/* ==========================================================================
+    INICIO-STYLE.CSS - Bachillerato de Artes DANCEY
+   ========================================================================== */
+
+/* --- Introducción de la Página --- */
+.pagina-intro {
+    text-align: center;
+    padding: 80px 10% 40px;
+    background: linear-gradient(to bottom, var(--color-contraste-1), var(--color-principal));
+}
+
+.tag {
+    background-color: var(--color-contraste-2); 
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.pagina-intro h2 {
+    font-size: 2.8rem;
+    color: var(--color-oscuro);
+    margin-bottom: 20px;
+}
+
+/* --- Contenedor de Información y Formulario --- */
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    padding: 40px 8%;
+    align-items: start;
+    background-color: var(--color-principal); 
+}
+
+/* Bloques de Información (Izquierda) */
+.info-caja {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--color-contraste-1); 
+}
+
+.info-caja h4 {
+    color: var(--color-contraste-2); 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Formulario (Derecha) */
+.contacto-formulario {
+    background: var(--color-oscuro); 
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.contacto-formulario h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--color-enlace); 
+}
+
+.contacto-formulario p {
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.input-grupo {
+    margin-bottom: 20px;
+}
+
+.input-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--color-enlace); 
+}
+
+.input-grupo input, 
+.input-grupo textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--color-contraste-2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-family: var(--fuente-manrope); 
+}
+
+/* Botón Principal */
+.boton-primario {
+    background-color: var(--color-contraste-1); 
+    color: var(--color-oscuro);
+    border: none;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.boton-primario:hover {
+    background-color: var(--color-enlace-visto); 
+    transform: translateY(-2px);
+}
+
+/* --- Sección Formación Integral (Grid Inferior) --- */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-enlace); 
+}
+
+.servicios-texto {
+    padding: 10% 15%;
+}
+
+.servicios-texto h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-oscuro);
+}
+
+.servicios-texto p {
+    color: var(--color-texto); 
+}
+
+.servicios-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ==========================================================================
+    RESPONSIVO CORREGIDO ¡
+   ========================================================================== */
+
+/* TABLET: Desde 851px hasta 1024px */
+@media (min-width: 851px) and (max-width: 1024px) {
+    .contacto-contenedor, 
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        padding: 40px 10%;
+    }
+
+    .contacto-formulario {
+        max-width: 100%; 
+    }
+
+    
+
+    .servicios-img img {
+        height: 350px;
+    }
+}
+
+/* MÓVIL: Hasta 850px */
+@media (max-width: 850px) {
+    .pagina-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .contacto-contenedor, 
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 5%;
+    }
+
+    .contacto-form, 
+    .servicios-texto {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .servicios-img img {
+        height: 250px;
+    }
+
+    .boton-primario {
+        width: 100%;
+    }
+}

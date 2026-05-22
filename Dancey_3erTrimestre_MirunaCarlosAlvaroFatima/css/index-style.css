@@ -1,0 +1,264 @@
+/* ==========================================================================
+    MIRUNA GEORGIANA MATEI - DANCEY CSS COMPLETO
+   ========================================================================== */
+
+/* 1. CONFIGURACIÓN GLOBAL Y VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+:root {
+    --color-principal: #f6eddc;
+    --color-enlace: #e3e5d7;
+    --color-enlace-visto: #bdd6d2;
+    --color-contraste-1: #a5c8ca;
+    --color-contraste-2: #586875;
+    --color-oscuro: #2c343a;
+    --color-texto: #333;
+    --fuente-manrope: 'Manrope', sans-serif;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+/* 2. ESTRUCTURA Y SECCIONES */
+section {
+    padding: 5rem 10%;
+}
+
+.seccion-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.seccion-header h3 {
+    font-size: 2.5rem;
+    color: var(--color-oscuro);
+}
+
+/* 3. HERO SECTION */
+.principal {
+    height: 80vh;
+    background: linear-gradient(rgba(44, 52, 58, 0.6), rgba(44, 52, 58, 0.6)), 
+                url('../img/hero-dance.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.titulo {
+    background-color: var(--color-contraste-1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-oscuro);
+}
+
+.principal h2 {
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+}
+
+.principal-botones {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* 4. BOTONES */
+button {
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fuente-manrope);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.boton-primario {
+    background-color: var(--color-contraste-1);
+    color: var(--color-oscuro);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 5. GRID DE CURSOS */
+.cursos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    width: 100%;
+}
+
+.curso-tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TARJETA ESPECIAL (GRADO PROFESIONAL) */
+.tarjeta-especial {
+    border: 2px solid var(--color-contraste-1);
+    background-color: #fffcf7;
+}
+
+/* MINI GALERÍA: IMÁGENES ESTRECHAS Y ALARGADAS */
+.galeria-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.galeria-mini-item {
+    text-align: center;
+}
+
+.galeria-mini-item img {
+    width: 100%;
+    height: 180px; 
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid var(--color-enlace-visto);
+    transition: transform 0.3s ease;
+}
+
+.galeria-mini-item img:hover {
+    transform: scale(1.03);
+}
+
+.galeria-mini-item span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 8px;
+    color: var(--color-contraste-2);
+    text-transform: uppercase;
+}
+
+/* BOTÓN DE TASAS ESTILIZADO */
+.precio {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.precio a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-contraste-2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1.5px solid var(--color-contraste-2);
+    text-align: center;
+    width: 100%;
+}
+
+.precio a:hover {
+    background-color: transparent;
+    color: var(--color-contraste-2);
+}
+
+/* 6. SECCIÓN SERVICIOS */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    background: var(--color-enlace);
+    padding: 4rem;
+    border-radius: 20px;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-contraste-2);
+    font-weight: bold;
+}
+
+.servicios-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+/* ==========================================================================
+    7. MEDIA QUERIES (RESPONSIVE)
+   ========================================================================== */
+
+/* Tablets y pantallas medianas */
+@media (min-width: 851px) and (max-width: 1024px) {
+    section {
+        padding: 4rem 5%;
+    }
+    
+    .principal h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 850px) {
+    .cursos-contenedor {
+        grid-template-columns: 1fr; /* Una tarjeta por fila */
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .principal h2 {
+        font-size: 2.2rem;
+    }
+
+    .principal-botones {
+        flex-direction: column;
+    }
+}

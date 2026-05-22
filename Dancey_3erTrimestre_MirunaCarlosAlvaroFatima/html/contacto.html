@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - DANCEY</title>
+        <link rel="stylesheet" href="../css/base-style.css">
+        <link rel="stylesheet" href="../css/contacto-style.css">
+    </head>
+
+    <body onresize="visibilityCheck()" onload="onReset()">
+    <header>
+        <div class="logo">
+            <div class="logo-flex">
+                <img src="../img/logo.jpeg" alt="Logo DANCEY" class="logo-img-dancey">
+                
+                <div class="logo-texto">
+                    <h1>DANCEY</h1>
+                    <p>Conservatorio y Escuela de Artes</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./formacion.html">Formación</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <article>
+                <h2>Contacte con el Conservatorio y Escuela de Artes DANCEY.</h2>
+                <p>Para dar una respuesta más precisa a su consulta, incluya, por favor, en Mensaje la
+                    siguiente información:</p>
+                <ul>
+                    <li>Si ya estás matriculado o estas en proceso de hacerlo.</li>
+                    <li>Fecha de presentación de la matrícula.</li>
+                    <li>Curso al que vas o irías.</li>
+                    <li>Cualquier otra información que pueda aclarar su consulta.</li>
+                </ul>
+            </article>
+            <article class="contacto-form">
+                <form id="formulario" action="#">
+                    <fieldset>
+                        <legend>Datos para la consulta</legend>
+                        <div class="datos">
+                            <div class="input-group">
+                                <label><span class="required">*</span>Nombre</label>
+                                <input type="text" placeholder="Tu nombre">
+                            </div>
+                            <div class="input-group">
+                                <label><span class="required">*</span>Apellidos</label>
+                                <input type="text" placeholder="Tus apellidos">
+                            </div>
+                            <div class="input-group">
+                                <label><span class="required">*</span>Email</label>
+                                <input type="email" placeholder="ejemplo@correo.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label><span class="required">*</span>Asunto</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label class="mensaje"><span class="required">*</span>Mensaje</label>
+                                <textarea id="textarea" rows="15" cols="60" placeholder="Escriba aquí sus dudas"
+                                    maxlength="2000" form="formulario" required></textarea>
+                                <div class="caracteres">
+                                    <p id="CActuales">
+                                        2000 / 2000 caracteres.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="aclaracion"><span class="required">*</span> Indica que el campo es obligatorio</p>
+                    </fieldset>
+                    <div class="botones">
+                        <button type="reset" class="btn-clean">Limpiar</button>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <div class="info-box">
+                    <h3>Visítanos</h3>
+                    <p>Avda Cruz Roja 3, Alcázar de San Juan</p>
+                </div>
+                <div class="info-box">
+                    <h3>Llámanos</h3>
+                    <p>911 234 678</p>
+                </div>
+                <div class="info-box">
+                    <h3>Email</h3>
+                    <p>support.dancey@info.com</p>
+                </div>
+                <div class="mapa-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2995.9442883830307!2d-3.2314231198125003!3d39.38494230468296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1777017046117!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </article>
+        </main>
+
+    <footer id="contacto">
+        <div class="footer-contenido">
+            <div class="footer-info">
+                <h4>DANCEY</h4>
+                <p>Avda Cruz Roja 3, Alcázar de San Juan</p>
+                <p>Tel: 911 234 678 | @dancey</p>
+            </div>
+            <div class="footer-evento">
+                <p><strong>Puertas Abiertas:</strong></p>
+                <p>25 y 26 de marzo de 2026</p>
+            </div>
+        </div>
+        <div class="footer-boton">
+            <p>&copy; 2026 DANCEY Conservatorio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+        <script src='../js/contacto.js'></script>
+    </body>
+
+</html>

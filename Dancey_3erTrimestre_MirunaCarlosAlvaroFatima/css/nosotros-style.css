@@ -1,0 +1,375 @@
+/* ==========================================================================
+    FÁTIMA ZAHRA YAAGOUB (NOSOTROS)
+   ========================================================================== */
+
+/* ==========================================================================
+    1. CONFIGURACIÓN GLOBAL, VARIABLES Y BASE
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+:root {
+    --color-principal: #f6eddc;
+    --color-enlace: #e3e5d7;
+    --color-hero: rgb(43, 35, 35);
+    --color-enlace-visto: #bdd6d2;
+    --color-contraste-1: #a5c8ca;
+    --color-contraste-2: #586875;
+    --color-oscuro: #2c343a;
+    --color-texto: #333;
+    --fuente-manrope: 'Manrope', sans-serif;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    
+}
+
+
+.page-content {
+    background-color: #fffaf0;
+    color: #2b2b2b;
+}
+
+/* HERO */
+.nosotros-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+    color: white;
+    background-color: rgb(43, 35, 35);
+}
+
+.nosotros-hero-text {
+    flex: 1;
+}
+
+.nosotros-hero-text h2 {
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.nosotros-hero-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #f5f5f5;
+}
+
+.nosotros-hero-img {
+    flex: 1;
+    text-align: center;
+}
+
+.nosotros-hero-img img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #d4af37;
+    background-color: white;
+    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.35);
+}
+
+.nosotros-section {
+    padding: 70px 12%;
+    text-align: center;
+}
+
+.nosotros-section h2 {
+    font-size: 36px;
+    color: #b8860b;
+    margin-bottom: 22px;
+}
+
+.nosotros-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 16px;
+}
+
+/* SECCIÓN DESTACADA */
+.destacada {
+    background-color:var(--color-hero);
+    color: white;
+}
+
+.destacada h2 {
+    color: #d4af37;
+}
+
+.destacada p {
+    color: #f2f2f2;
+}
+
+/* TARJETAS PRINCIPALES */
+.nosotros-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    padding: 70px 10%;
+    background-color: #fffaf0;
+}
+
+.nosotros-card {
+    background-color: white;
+    padding: 38px 28px;
+    border-radius: 22px;
+    text-align: center;
+    border: 2px solid #f0d98a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotros-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(184, 134, 11, 0.28);
+}
+
+.nosotros-card h3 {
+    font-size: 24px;
+    color: #b8860b;
+    margin-bottom: 15px;
+}
+
+.nosotros-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* DIFERENCIAS */
+.lista-diferencias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.lista-diferencias div {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    border-left: 6px solid #d4af37;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.10);
+}
+
+.lista-diferencias h3 {
+    color: #b8860b;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.lista-diferencias p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* EQUIPO */
+.equipo-section {
+    padding: 75px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.equipo-section h2 {
+    font-size: 38px;
+    color: #b8860b;
+    margin-bottom: 15px;
+}
+
+.equipo-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto 45px;
+    color: #444;
+}
+
+.profesores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+
+.profesor-card {
+    background: linear-gradient(180deg, #fffaf0, #ffffff);
+    padding: 28px 22px;
+    border-radius: 22px;
+    border: 2px solid #f0d98a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profesor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(184, 134, 11, 0.25);
+}
+
+.profesor-card img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    margin-bottom: 18px;
+}
+
+.profesor-card h3 {
+    color: #b8860b;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.profesor-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* LLAMADA FINAL */
+.llamada {
+    background:  #493e2186;
+    color: white;
+}
+
+.llamada h2 {
+    color: #d4af37;
+}
+
+.llamada p {
+    color: white;
+}
+
+.btn-nosotros {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background-color: #d4af37;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+.btn-nosotros:hover {
+    background-color: transparent;
+    color: #d4af37;
+}
+
+/* RESPONSIVE TABLET */
+/* =========================
+   RESPONSIVE MÓVIL
+   Resolución indicada: 1668 x 2388 px
+========================= */
+@media (max-width: 1668px) {
+    .nosotros-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 8%;
+        gap: 35px;
+    }
+
+    .nosotros-hero-text h2 {
+        font-size: 40px;
+    }
+
+    .nosotros-hero-text p {
+        font-size: 17px;
+    }
+
+    .nosotros-hero-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .nosotros-cards {
+        grid-template-columns: 1fr;
+        padding: 60px 8%;
+    }
+
+    .lista-diferencias {
+        grid-template-columns: 1fr;
+    }
+
+    .profesores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nosotros-section {
+        padding: 60px 8%;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+   Resolución indicada: 1179 x 2556 px
+========================= */
+@media (max-width: 1179px) {
+    .nosotros-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .nosotros-hero-text h2 {
+        font-size: 36px;
+    }
+
+    .nosotros-hero-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .nosotros-hero-img img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .nosotros-section {
+        padding: 50px 6%;
+    }
+
+    .nosotros-section h2,
+    .equipo-section h2 {
+        font-size: 30px;
+    }
+
+    .nosotros-section p {
+        font-size: 16px;
+    }
+
+    .nosotros-cards {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+    }
+
+    .nosotros-card {
+        padding: 28px 22px;
+    }
+
+    .lista-diferencias {
+        grid-template-columns: 1fr;
+    }
+
+    .profesores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profesor-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-nosotros {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+}
