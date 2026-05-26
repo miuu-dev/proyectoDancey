@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Definimos los elementos
-    ConTextarea = document.getElementById('textarea');
-    caracteresRest = document.getElementById('CActuales');
+    const ConTextarea = document.getElementById('textarea');
+    const caracteresRest = document.getElementById('CActuales');
     const botonLimpiar = document.getElementsByClassName('btn-clean')[0];
-    menu = document.getElementsByClassName('menu')[0];
-    botonCompactar = document.getElementById('compact');
+    const menu = document.getElementsByClassName('menu')[0];
+    const botonCompactar = document.getElementById('compact');
 
     // Source - https://stackoverflow.com/a/14086435
     // Posted by Andrew Hubbs, modified by community. See post 'Timeline' for change history
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         caracteresRest.innerHTML = textaCaractLim + " / " + textaCaractLim + " caracteres.";
     };
 
-    // Esto compata el menu cuando clicas su menú
+    // Esto compacta el menu cuando clicas su menú
     botonCompactar.onclick = function () {
         if (menu.style.display === "none") {
             menu.style.display = "flex";
