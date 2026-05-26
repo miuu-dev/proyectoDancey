@@ -15,32 +15,53 @@
     --shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+/*
+Esto debería meterse en el estilo base
+*/
+header {
+    /*esto es para cancelar el estilo principal*/
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    display: block;
+    justify-content: none;
+    align-items: inherit;
+    position: inherit;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 0 transparent;
+    
+    /*Esto es lo que hay que añadir*/
+    position: sticky;
+    top: 0;
+}
+
 .menu {
-    background-color: var(--color-contraste-2) !important;
-    color: white !important;
-    padding: 1.5rem 8% !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    top: 0 !important;
-    z-index: 1000 !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
-    overflow:scroll !important;
+    background-color: var(--color-contraste-2);
+    color: white;
+    padding: 1.5rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow:scroll;
 }
 
 #compact {
-    background-color: var(--color-contraste-2) !important;
-    display: none !important;
-    border-radius: 0 !important;
-    border-color: var(--color-contraste-2) !important;
-    border-bottom-left-radius: 2px !important;
-    border-bottom-right-radius: 2px !important;
-    color: white !important;
+    background-color: var(--color-contraste-2);
+    display: none;
+    border-radius: 0;
+    border-color: var(--color-contraste-2);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: white;
 }
 
 #compact:hover {
-    background: var(--color-principal) !important;
-    color: var(--color-texto) !important; 
+    background: var(--color-principal);
+    color: var(--color-texto);
 }
 /*
 a partir de aquí ya no tendría que ir denro del estilo principal
@@ -48,6 +69,8 @@ a partir de aquí ya no tendría que ir denro del estilo principal
 
 main {
     margin: 2%;
+    margin-top: 0;
+    padding-top: 1.5rem;
 }
 
 .contacto-form fieldset{

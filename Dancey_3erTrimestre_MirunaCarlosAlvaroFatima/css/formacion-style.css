@@ -19,3 +19,11 @@
     --fuente-manrope: 'Manrope', sans-serif;
     --shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+
+img {
+    width: 100%;
+}
+
+.page-content {
+    padding-top: 1.5rem;
+}

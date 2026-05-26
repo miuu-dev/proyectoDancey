@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="../css/base-style.css">
     <link rel="stylesheet" href="../css/nosotros-style.css">
 </head>
-<body>
+<body onresize="visibilityCheck()" onload="visibilityCheck()">
     <header>
-        <div class="logo">
+        <div class="menu">
             <div class="logo-flex">
                 <img src="../img/logo.jpeg" alt="Logo DANCEY" class="logo-img-dancey">
-                
+
                 <div class="logo-texto">
                     <h1>DANCEY</h1>
                     <p>Conservatorio y Escuela de Artes</p>
                 </div>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="formacion.html">Formación</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./formacion.html">Formación</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <button id="compact">↑</button>
     </header>
 
     <main class="page-content">
@@ -195,5 +196,6 @@
     </footer>
 
     <script src='../js/tasas-bach.js'></script>
+    <script src='../js/menu-externo.js'></script>
 </body>
 </html>

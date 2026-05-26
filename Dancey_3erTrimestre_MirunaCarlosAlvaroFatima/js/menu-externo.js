@@ -1,3 +1,4 @@
+// código creado por álvaro díaz
 const menu = document.getElementsByClassName('menu')[0];
 const botonCompactar = document.getElementById('compact');
 

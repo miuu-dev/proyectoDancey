@@ -36,16 +36,44 @@ body {
 
 /* --- Header General --- */
 header {
+    position: sticky;
+    top: 0;
+}
+
+.menu {
     background-color: var(--color-contraste-2);
     color: white;
     padding: 1.5rem 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow:scroll;
+}
+
+#compact {
+    background-color: var(--color-contraste-2);
+    display: none;
+    border-radius: 0;
+    color: white;
+    font-family: var(--fuente-manrope);
+    padding: 0.2em 0.9em;
+    cursor: pointer;
+    border: 1px solid var(--color-contraste-2);
+    border-top: 0;
+    border-left: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: absolute;
+}
+
+#compact:hover {
+    background: transparent;
+    color: var(--color-texto);
+    transform: none;
+    box-shadow: 0;
 }
 
 /* --- Logo --- */

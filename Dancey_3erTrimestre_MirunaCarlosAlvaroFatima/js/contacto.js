@@ -1,3 +1,4 @@
+// código creado por álvaro díaz
 // Caracteres que faltan para llegar al límite en el textarea de contacto
 const ConTextarea = document.getElementById('textarea');
 const caracteresRest = document.getElementById('CActuales');
