@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // creamos una constante seleccionando la clase .contacto-form form
-    const formulario = document.querySelector('.contacto-form form');
+    const formulario = document.querySelector('.contacto-formulario form');
 
     // revisamos que el formulario exista
     if (formulario) {
