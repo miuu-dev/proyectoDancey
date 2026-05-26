@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // creamos una constante donde capturará 4 datos del formulario: nombre, email, especialidad y mensaje
             const datos = {
-                nombre: formulario.querySelector('input[name="nombre"]').value,
-                email: formulario.querySelector('input[type="email"]').value,
-                especialidad: formulario.querySelector('input[name="especialidad"]').value,
+                nombre: document.getElementById('nombreAlumno').value,
+                email: document.getElementById('emailContacto').value,
+                especialidad: document.getElementById('especialidadDanza').value,
                 mensaje: formulario.querySelector('textarea').value
             };
 
             // comprobamos que los datos de ciertos campos estén bien, en caso de que no, se le aparecerá una alerta
             if (datos.nombre === "" || datos.email === "") {
-                alert("Por favor, rellena los campos obligatorios (Nombre y Email).");
+                alert("Por favor, rellena los campos obligatorios.");
                 return;
             }
 
