@@ -51,30 +51,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
-
-    // código de álvaro para el funcionamiento del menú
-botonCompactar.onclick = function () {
-    if (menu.style.display === "none") {
-        menu.style.display = "flex";
-        botonCompactar.textContent = ("↑");
-    } else {
-        menu.style.display = "none";
-        botonCompactar.textContent = ("↓");
-    }
-};
-
-
-function visibilityCheck() {
-    if (screen.availWidth >= 710) {
-        if (menu.style.display === "none") {
-            menu.style.display = "flex";
-        }
-        if (menu.style.display != "none") {
-            botonCompactar.textContent = ("↑");
-            botonCompactar.style.display = "none";
-        }
-    } else {
-        botonCompactar.style.display = "block";
-    }
-} 
 });
