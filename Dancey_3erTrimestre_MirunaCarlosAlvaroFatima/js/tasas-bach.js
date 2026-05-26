@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 style="color: var(--color-contraste-1);">¡Solicitud Recibida!</h3>
                         <p>Gracias por tu interés en nuestro programa de Artes, ${datos.nombre}.</p>
                         <p>Hemos enviado el dossier informativo a <strong>${datos.email}</strong>.</p>
-                        <button onclick="location.reload()" class="btn-primary" style="margin-top: 20px; width: auto;">Volver</button>
+                        <button onclick="location.reload()" class="boton-primario" style="margin-top: 20px; width: auto;">Volver</button>
                     </div>
                 `;
             }, 1500);
