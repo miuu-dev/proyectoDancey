@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // creamos una constante donde capturará 4 datos del formulario: nombre, email, especialidad y mensaje
             const datos = {
-                nombre: formulario.querySelector('input[type="text"]').value,
+                nombre: formulario.querySelector('input[name="nombre"]').value,
                 email: formulario.querySelector('input[type="email"]').value,
-                especialidad: formulario.querySelectorAll('input[type="text"]')[1].value,
+                especialidad: formulario.querySelector('input[name="especialidad"]').value,
                 mensaje: formulario.querySelector('textarea').value
             };
 
