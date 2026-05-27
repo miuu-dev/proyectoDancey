@@ -4,9 +4,15 @@
 </p>
 
 ---
+## ✏️ Índice
+1. [Descripción](#descripcion)
+2. [Objetivo principales](#objetivos-principales)
+3. [Tecnologías empleadas](#tecnologias-empleadas)
+4. [Equipo de desarrollo](#equipo-de-desarrollo)
+5. [Identidad visual](#identidad-visual)
 
 ## 📖 Descripción
-**DANCEY** es una propuesta educativa innovadora que nace para cubrir la carencia de centros autorizados de danza en un radio de más de 100 km en la zona de Alcázar de San Juan. El proyecto busca transformar la educación artística, facilitando la conciliación académica y profesional de los jóvenes talentos.
+> **DANCEY** es una propuesta educativa innovadora que nace para cubrir la carencia de centros autorizados de danza en un radio de más de 100 km en la zona de Alcázar de San Juan. El proyecto busca transformar la educación artística, facilitando la conciliación académica y profesional de los jóvenes talentos.
 
 ## 🎯 Objetivos principales
 * 📍 **Descentralización:** Convertir Alcázar de San Juan en un nodo estratégico cultural para la región.
@@ -16,7 +22,7 @@
 ---
 
 ## 🛠 Tecnologías empleadas
-Este proyecto ha sido construido utilizando estándares modernos de desarrollo web:
+> Este proyecto ha sido construido utilizando estándares modernos de desarrollo web:
 
 - 💻 **HTML5**: Estructura semántica centrada en la accesibilidad.
 - 🎨 **CSS3**: Maquetación profesional mediante *CSS Grid* y *Flexbox*.
