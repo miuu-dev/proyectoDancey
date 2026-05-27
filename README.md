@@ -27,7 +27,7 @@ Este proyecto ha sido construido utilizando estándares modernos de desarrollo w
 ## 👥 Equipo de Desarrollo
 
 | Rol | Integrante | Responsabilidades |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | **Arquitectura** | Miruna Matei | Inicio y proceso de inscripción |
 | **Contenido** | Carlos González | Formación académica y programas |
 | **UX/UI** | Álvaro Díaz | Atención al usuario y menú móvil |
