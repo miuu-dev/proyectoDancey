@@ -10,6 +10,7 @@
 3. [Tecnologías empleadas](#tecnologias-empleadas)
 4. [Equipo de desarrollo](#equipo-de-desarrollo)
 5. [Identidad visual](#identidad-visual)
+6. [Árbol de ficheros](#árbol-de-ficheros)
 
 ## Descripción
 > **DANCEY** es una propuesta educativa innovadora que nace para cubrir la carencia de centros autorizados de danza en un radio de más de 100 km en la zona de Alcázar de San Juan. El proyecto busca transformar la educación artística, facilitando la conciliación académica y profesional de los jóvenes talentos.
@@ -45,6 +46,43 @@
 * **Paleta de colores**: Tonos crema y pizarra, transmitiendo disciplina y elegancia.
 * **Tipografía**: *Manrope*, elegida por su excelente legibilidad y estética contemporánea.
 
+---
+
+## Árbol de ficheros
+```
+📦 Dancey_3erTrimestre_MirunaCarlosAlvaroFatima
+├── 📂 0.Documentacion
+│   ├── 📄 ProyectoDanceyPP_3erTrimestre_MirunaCarlosAlvaroFatima.pdf
+│   ├── 📄 ProyectoDancey_3erTrimestre_MirunaCarlosAlvaroFatima.pdf
+│   └── 📂 documentacionEspecífica
+│       ├── 📄 documentacion_contacto_Alvaro.pdf
+│       ├── 📄 documentacion_formacion_Carlos.pdf
+│       ├── 📄 documentacion_index_Miruna.pdf
+│       ├── 📄 documentacion_nosotros_Fatima.pdf
+│       ├── 📄 documentacion_tasas-bach_Miruna.pdf
+│       └── 📄 enlaceGithub.txt
+├── 📂 css
+│   ├── 📄 base-style.css
+│   ├── 📄 contacto-style.css
+│   ├── 📄 formacion-style.css
+│   ├── 📄 index-style.css
+│   ├── 📄 nosotros-style.css
+│   └── 📄 tasas-bach-style.css
+├── 📂 html
+│   ├── 📄 contacto.html
+│   ├── 📄 formacion.html
+│   ├── 📄 nosotros.html
+│   └── 📄 tasas-bach.html
+├── 📂 img
+│   ├── 📄 (todas las imágenes)
+├── 📂 js
+│   ├── 📄 contacto.js
+│   ├── 📄 menu-externo.js
+│   └── 📄 tasas-bach.js
+├── 📄 index.html
+└── 📄 README.md
+
+```
 ---
 
 <p align="center">
