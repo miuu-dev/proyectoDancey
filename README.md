@@ -5,23 +5,23 @@
 
 ---
 ## ✏️ Índice
-1. [Descripción](#descripcion)
+1. [Descripción](#descripción)
 2. [Objetivo principales](#objetivos-principales)
 3. [Tecnologías empleadas](#tecnologias-empleadas)
 4. [Equipo de desarrollo](#equipo-de-desarrollo)
 5. [Identidad visual](#identidad-visual)
 
-## 📖 Descripción
+## Descripción
 > **DANCEY** es una propuesta educativa innovadora que nace para cubrir la carencia de centros autorizados de danza en un radio de más de 100 km en la zona de Alcázar de San Juan. El proyecto busca transformar la educación artística, facilitando la conciliación académica y profesional de los jóvenes talentos.
 
-## 🎯 Objetivos principales
+## Objetivos principales
 * 📍 **Descentralización:** Convertir Alcázar de San Juan en un nodo estratégico cultural para la región.
 * ⚖️ **Conciliación:** Unificar programas de Bachillerato y Danza para optimizar el rendimiento de los alumnos.
 * 🏗️ **Infraestructura:** Espacios diseñados con +20 aulas técnicas y auditorios profesionales.
 
 ---
 
-## 🛠 Tecnologías empleadas
+## Tecnologías empleadas
 > Este proyecto ha sido construido utilizando estándares modernos de desarrollo web:
 
 - 💻 **HTML5**: Estructura semántica centrada en la accesibilidad.
@@ -30,7 +30,7 @@
 
 ---
 
-## 👥 Equipo de Desarrollo
+## Equipo de Desarrollo
 
 | Rol | Integrante | Responsabilidades |
 | :---: | :---: | :---: |
@@ -41,7 +41,7 @@
 
 ---
 
-## 🎨 Identidad Visual
+## Identidad Visual
 * **Paleta de colores**: Tonos crema y pizarra, transmitiendo disciplina y elegancia.
 * **Tipografía**: *Manrope*, elegida por su excelente legibilidad y estética contemporánea.
 
