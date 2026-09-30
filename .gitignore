@@ -1,0 +1,19 @@
+# Credenciales y configuraciones locales
+.env
+*.local
+config.json
+secrets.xml
+
+# Archivos temporales y del sistema
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Binarios y compilaciones
+bin/
+obj/
+build/
+dist/
+*.class
+*.exe
