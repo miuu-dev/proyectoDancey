@@ -11,5 +11,5 @@ Esto es una prueba para comprobar si Javier, mi compañero, puede editar este fi
 # ADMIN
 Esto es una prueba para comprobar si Javier, mi compañero, puede ver la pestaña Settings (Configuración) en la parte superior del repositorio
 
-> Resultado:
+> Resultado: Javier -> Tengo permisos de administrador
 
